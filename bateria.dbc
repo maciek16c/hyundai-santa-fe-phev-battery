@@ -1,198 +1,98 @@
 VERSION ""
 
 
-NS_ :
-    NS_DESC_
-    CM_
-    BA_DEF_
-    BA_
-    VAL_
-    CAT_DEF_
-    CAT_
-    FILTER
-    BA_DEF_DEF_
-    EV_DATA_
-    ENVVAR_DATA_
-    SGTYPE_
-    SGTYPE_VAL_
-    BA_DEF_SGTYPE_
-    BA_SGTYPE_
-    SIG_TYPE_REF_
-    VAL_TABLE_
-    SIG_GROUP_
-    SIG_VALTYPE_
-    SIGTYPE_VALTYPE_
-    BO_TX_BU_
-    BA_DEF_REL_
-    BA_REL_
-    BA_DEF_DEF_REL_
-    BU_SG_REL_
-    BU_EV_REL_
-    BU_BO_REL_
-    SG_MUL_VAL_
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
 
-BS_: 
-BU_: BMS 
-BO_ 1568 12V: 8 BMS
-   SG_ 12V_voltage : 15|8@0+ (0.1,0) [0|1] "" BMS
+BS_:
+
+BU_: BMS
+
+
+BO_ 1568 Bat12V: 8 BMS
+ SG_ Bat12V_voltage : 15|8@0+ (0.1,0) [0|1] ""  BMS
 
 BO_ 2028 UDS_response: 8 BMS
-   SG_ Frame_type M : 7|4@0+ (1,0) [0|1] "" BMS
-   SG_ bytes : 3|4@0+ (1,0) [0|1] "" BMS
-   SG_ Service_ID m0M : 15|8@0+ (1,0) [0|1] "" BMS
-   SG_ Data4 : 39|8@0+ (1,0) [0|1] "" BMS
-   SG_ Data5 : 47|8@0+ (1,0) [0|1] "" BMS
-   SG_ Data6 : 55|8@0+ (1,0) [0|1] "" BMS
-   SG_ Data7 : 63|8@0+ (1,0) [0|1] "" BMS
-   SG_ ReadDataByIdentifie m34M : 23|8@0+ (1,0) [0|1] "" BMS
+ SG_ Frame_type M : 7|4@0+ (1,0) [0|1] ""  BMS
+ SG_ bytes : 3|4@0+ (1,0) [0|1] ""  BMS
+ SG_ Service_ID m0 : 15|8@0+ (1,0) [0|1] ""  BMS
+ SG_ Data4 : 39|8@0+ (1,0) [0|1] ""  BMS
+ SG_ Data5 : 47|8@0+ (1,0) [0|1] ""  BMS
+ SG_ Data6 : 55|8@0+ (1,0) [0|1] ""  BMS
+ SG_ Data7 : 63|8@0+ (1,0) [0|1] ""  BMS
+ SG_ ReadDataByIdentifie m34 : 23|8@0+ (1,0) [0|1] ""  BMS
 
 BO_ 2147484963 BCM: 8 BMS
-   SG_ Ign : 7|4@0+ (1,0) [0|1] "" BMS
-   SG_ AliveCounter : 56|2@1+ (1,0) [0|3] "" BMS
+ SG_ Ign : 7|4@0+ (1,0) [0|1] ""  BMS
+ SG_ AliveCounter : 56|2@1+ (1,0) [0|3] ""  BMS
 
-BO_ 2147484160 200: 8 BMS
-   SG_ AliveCnt : 49|4@1+ (1,0) [0|1] "" BMS
-   SG_ ChkSum : 56|8@1+ (1,0) [0|1] "" BMS
-   SG_ Precharge_zaqwsa : 39|1@1+ (1,0) [0|1] "" BMS
-   SG_ Contactor_test : 44|1@0+ (1,0) [0|1] "" BMS
-   SG_ Ign_fault : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+BO_ 2147484160 Msg_200: 8 BMS
+ SG_ AliveCnt : 49|4@1+ (1,0) [0|1] ""  BMS
+ SG_ ChkSum : 56|8@1+ (1,0) [0|1] ""  BMS
+ SG_ Precharge_zaqwsa : 39|1@1+ (1,0) [0|1] ""  BMS
+ SG_ Contactor_test : 44|1@0+ (1,0) [0|1] ""  BMS
+ SG_ Ign_fault : 45|1@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147484322 2A2: 8 BMS
+BO_ 2147484322 Msg_2A2: 8 BMS
 
-BO_ 2147484322 2A2: 8 BMS
+BO_ 2147484322 Msg_2A2: 8 BMS
 
-BO_ 2147484161 201: 8 BMS
-   SG_ ChkSum : 56|8@1+ (1,0) [0|1] "" BMS
+BO_ 2147484161 Msg_201: 8 BMS
+ SG_ ChkSum : 56|8@1+ (1,0) [0|1] ""  BMS
 
-BO_ 2147484162 202: 8 BMS
-   SG_ ChkSum : 56|8@1+ (1,0) [0|1] "" BMS
+BO_ 2147484162 Msg_202: 8 BMS
+ SG_ ChkSum : 56|8@1+ (1,0) [0|1] ""  BMS
 
-BO_ 2147484163 203: 8 BMS
-   SG_ ChkSum : 56|8@1+ (1,0) [0|1] "" BMS
-   SG_ AliveCounter : 30|2@1+ (1,0) [0|1] "" BMS
+BO_ 2147484163 Msg_203: 8 BMS
+ SG_ ChkSum : 56|8@1+ (1,0) [0|1] ""  BMS
+ SG_ AliveCounter : 30|2@1+ (1,0) [0|1] ""  BMS
 
-BO_ 2147484320 2A0: 8 BMS
+BO_ 2147484320 Msg_2A0: 8 BMS
 
-BO_ 2147484321 2A1: 8 BMS
-   SG_ Inverter_voltage_bms : 48|8@1+ (1.66,0) [0|1] "V" Vector__XXX
+BO_ 2147484321 Msg_2A1: 8 BMS
+ SG_ Inverter_voltage_bms : 48|8@1+ (1.66,0) [0|1] "V" Vector__XXX
 
-BO_ 2147484336 2B0: 8 BMS
+BO_ 2147484336 Msg_2B0: 8 BMS
 
-BO_ 2147484341 2B5: 8 BMS
+BO_ 2147484341 Msg_2B5: 8 BMS
 
-BO_ 2147484401 2F1: 8 BMS
+BO_ 2147484401 Msg_2F1: 8 BMS
 
-BO_ 2147484964 0x524: 8 BMS
+BO_ 2147484964 Msg_524: 8 BMS
 
 BO_ 2147484400 Contactors: 8 BMS
-   SG_ ChkSum : 56|8@1+ (1,0) [0|1] "" BMS
-   SG_ AliveCounter : 48|2@1+ (1,0) [0|3] "" BMS
-   SG_ Contactor1_test : 54|1@0+ (1,0) [0|1] "" BMS
-   SG_ Contactor2_test : 0|1@0+ (1,0) [0|1] "" BMS
+ SG_ ChkSum : 56|8@1+ (1,0) [0|1] ""  BMS
+ SG_ AliveCounter : 48|2@1+ (1,0) [0|3] ""  BMS
+ SG_ Contactor1_test : 54|1@0+ (1,0) [0|1] ""  BMS
+ SG_ Contactor2_test : 0|1@0+ (1,0) [0|1] ""  BMS
 
-BO_ 2147484159 Z_baterii-stycznik: 8 BMS
-   SG_ Stycznik : 0|4@1+ (1,0) [0|1] "" BMS
 
-BO_ 2147485101 Current: 8 BMS
-   SG_ Current : 16|16@1- (0.1,0) [0|1] "A" BMS
 
-BO_ 2147484994 Soc: 8 BMS
-   SG_ Soc : 0|16@1+ (0.05,0) [0|1] "%" Vector__XXX
 
-BO_ 2147485064 Voltage: 8 BMS
-   SG_ Battery_voltage : 0|16@1+ (0.1,0) [0|1] "V" Vector__XXX
-
-CM_ BU_ BMS "HV battery BMS";
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" 1;
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" 1;
-BA_ "GenMsgForegroundColor" BO_ 1568 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2028 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484160 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484322 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484161 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484162 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484163 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484320 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484401 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147485101 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484994 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147485064 "#000000";
-VAL_ 2028 Frame_type 0 "Single_frame";
-VAL_ 2028 bytes 0 "";
-VAL_ 2028 Service_ID 16 "DiagnosticSessionControl" 17 "ECUReset" 39 "SecurityAccess" 62 "TesterPresent" 34 "ReadDataByIdentifier" 35 "ReadMemoryByAddress" 46 "WriteDataByIdentifier" 61 "WriteMemoryByAddress" 20 "ClearDiagnosticInformation" 25 "ReadDTCInformation" 47 "InputOutputControlByIdentifier" 49 "RoutineControl" 52 "RequestDownload" 53 "RequestUpload" 54 "TransferData" 55 "RequestTransferExit";
-VAL_ 2028 ReadDataByIdentifie 0 "Single_frame";
-VAL_ 2147484159 Stycznik 2 "Precharge?" 1 "On?";
-SG_MUL_VAL_ 2028 Service_ID Frame_type 0-0;
-SG_MUL_VAL_ 2028 ReadDataByIdentifie Frame_type 34-34;
